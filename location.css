@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@300&display=swap");
+
+html,
+body {
+  margin: 0;
+}
+body {
+  min-width: 325px;
+  box-sizing: border-box;
+  font-family: "Outfit", "Arial", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+a {
+  text-transform: uppercase;
+  line-height: 0.9em;
+  font-family: "Big Shoulders Display", "Lucida Calligraphy", cursive;
+}
+header {
+  line-height: 0;
+  position: relative;
+}
+.btn {
+  width: 255px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 9%;
+  z-index: 2;
+}
+
+img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.mobile {
+  display: none;
+}
+.photos {
+  background-color: #151515;
+  position: relative;
+}
+.address {
+  padding-bottom: 6em;
+  background-color: #151515;
+  color: white;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 6em 10em 4em;
+}
+h1 {
+  font-size: 73px;
+  margin: 0;
+}
+h2 {
+  color: #d5966b;
+  font-size: 35px;
+  margin: 0;
+}
+.address p {
+  font-size: 23px;
+}
+
+/* button */
+.location-button {
+  display: grid;
+  grid-template-columns: 55px 200px;
+}
+.button-text {
+  margin: 0;
+  float: left;
+  background-color: #151515;
+  padding: 0.4em 0;
+  margin-top: 0;
+}
+.button-p {
+  line-height: 1.09rem;
+  font-size: 21px;
+  letter-spacing: 0.165rem;
+  text-decoration: none;
+  text-align: center;
+}
+.button-arrows {
+  background-color: #d5966b;
+  display: grid;
+  place-items: center;
+  transition: 0.1s ease-in;
+}
+
+/* a href */
+a:link {
+  color: white;
+}
+a:visited {
+  color: white;
+}
+
+/*footer*/
+footer {
+  display: grid;
+  grid-template-columns: 30% 50% 20%;
+  background-color: #d5996b;
+  color: #151515;
+  padding: 5em 10em 4em;
+}
+h4 {
+  font-size: 36px;
+  margin-top: 0;
+}
+.text-footer {
+  font-size: 18px;
+  margin-top: 0;
+  margin-right: 2em;
+}
+h1 {
+  font-size: 60px;
+}
+h4 {
+  font-size: 30px;
+}
+.icons a {
+  margin-right: 0.9em;
+  text-decoration: none;
+}
+.icons svg,
+.icons path {
+  fill: #151515;
+}
+
+/*hover*/
+
+.location-button:hover {
+  background-color: #151515;
+}
+a:hover {
+  color: #d5966b;
+}
+svg:hover,
+path:hover {
+  fill: #d5966b;
+  transition: 0.1s ease-in;
+}
+
+@media screen and (max-width: 849px) {
+  h1 {
+    font-size: 60px;
+  }
+  h4 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 749px) {
+  h1 {
+    font-size: 45px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 649px) {
+  .address {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  footer {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mobile {
+    display: inline-block;
+  }
+  .desktop {
+    display: none;
+  }
+  .address {
+    display: block;
+    padding: 0;
+  }
+  footer {
+    display: block;
+    padding: 0;
+  }
+}
